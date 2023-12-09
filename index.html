@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <title>Yeon Woo Website</title>
+  </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Gaegu:wght@300;400;700&display=swap");
+    body {
+      background-image: url("seo-2394237_1280.jpg");
+    }
+    img[src="KakaoTalk_20231208_024519252.jpg"] {
+      border-radius: 40px;
+      font-family: "Gaegu", sans-serif;
+    }
+    h1 {
+      font-family: "Gaegu", sans-serif;
+      font-weight: 900;
+      font-size: 10000;
+    }
+    p {
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: #4894df;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      top: -380px;
+      left: 0px;
+      position: relative;
+      font-family: "Gaegu", sans-serif;
+      font-weight: 900;
+      font-size: large;
+    }
+    aside {
+      position: absolute;
+      top: 150px;
+      left: 1260px;
+    }
+    img[src="free-icon-instagram-logo-1384886.jpg"] {
+      border-radius: 15px;
+    }
+    img[src="github.jpg"] {
+      border-radius: 100px;
+    }
+  </style>
+  <body>
+    <div
+      class="w3-sidebar w3-bar-block"
+      style="display: none; z-index: 5"
+      id="mySidebar"
+    >
+      <button class="w3-bar-item w3-button w3-xxlarge" onclick="w3_close()">
+        Close &times;
+      </button>
+      <a
+        href="https://gogumahotteok.github.io/profile/"
+        class="w3-bar-item w3-button"
+        >Home</a
+      >
+      <a
+        href="https://gogumahotteok.github.io/profile1/"
+        class="w3-bar-item w3-button"
+        >About me</a
+      >
+      <a
+        href="https://gogumahotteok.github.io/profile2/"
+        class="w3-bar-item w3-button"
+        >my friends</a
+      >
+      <a
+        href="https://gogumahotteok.github.io/profile3/"
+        class="w3-bar-item w3-button"
+        >Python Storage</a
+      >
+    </div>
+
+    <div
+      class="w3-overlay"
+      onclick="w3_close()"
+      style="cursor: pointer"
+      id="myOverlay"
+    ></div>
+
+    <div>
+      <button class="w3-button w3-white w3-xxlarge" onclick="w3_open()">
+        &#9776;
+      </button>
+      <div class="w3-container">
+        <h1>
+          <img src="KakaoTalk_20231208_024519252.jpg" /><br />
+          Seo Yeon Woo
+        </h1>
+        <p>
+          History<br />
+          -I was born on November 17, 2004.<br />
+          -My hometown is Suncheon. It has lived for almost 14 years.
+        </p>
+        <p>
+          Career<br />
+          -I graduated from Shinheung Middle School.<br />
+          -I graduated from Maesan High School.<br />
+          -I am attending Jeonbuk National University.
+        </p>
+        <p>
+          Hobby<br />
+          -I like basketball. But I'm not good at it.<br />
+          -I like animation. Recently, I watch cartoons more often.<br />
+          -Recently, I've also been interested in programming.
+        </p>
+        <p>
+          personality<br />
+          -In mbti terms, I'm istj. I personally don't believe in mbti<br />
+          -I get sensitive when I'm hungry.<br />
+          -I might rip someone apart. Really really<br />
+          -Of course, I'm just kidding.
+        </p>
+        <p>
+          Food<br />
+          -My favorite chicken is Bburinkle.<br />
+          -My favorite ramen is Yukgaejang.<br />
+          -My favorite soup dish is my mom's kimchi stew.
+        </p>
+        <aside>
+          <a
+            href="https://www.instagram.com/p/Czq5Z4RLjVM/?hl=ko"
+            target="blank"
+            ><img src="free-icon-instagram-logo-1384886.jpg" /></a
+          ><br />
+          <br />
+          <br />
+          <a href="https://github.com/gogumahotteok" target="blank"
+            ><img src="github.jpg"
+          /></a>
+        </aside>
+      </div>
+    </div>
+
+    <script>
+      function w3_open() {
+        document.getElementById("mySidebar").style.display = "block";
+        document.getElementById("myOverlay").style.display = "block";
+      }
+
+      function w3_close() {
+        document.getElementById("mySidebar").style.display = "none";
+        document.getElementById("myOverlay").style.display = "none";
+      }
+    </script>
+  </body>
+</html>
